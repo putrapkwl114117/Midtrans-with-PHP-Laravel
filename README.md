@@ -1,89 +1,42 @@
-<<<<<<< HEAD
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+Website ini adalah aplikasi toko online yang dibangun menggunakan Laravel dan Livewire dengan integrasi Midtrans untuk sistem pembayaran. Website ini dirancang untuk memfasilitasi proses pembelian dan checkout secara efisien, namun untuk bagian antar muka pengguna masih sangat sederhana dikarenakan website ini bertujuan untuk pembelajaran dan latihan semata.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Menyediakan overview dari aktivitas terkini, seperti jumlah pesanan, produk terbaru, dan statistik penjualan. Komponen: Statistik: Grafis dan chart untuk menampilkan data penjualan dan aktivitas pengguna. Notifikasi: Sistem pemberitahuan untuk peringatan dan update penting.
 
-## About Laravel
+![image](https://github.com/user-attachments/assets/de68f503-24e5-4ad4-90b2-4e596eab043b)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Menambah, mengedit, dan menghapus produk dari toko. Komponen: Formulir Produk: Input untuk nama produk, deskripsi, harga, kategori, dan gambar. Daftar Produk: Tabel untuk menampilkan semua produk yang ada di toko.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![image](https://github.com/user-attachments/assets/8b907de1-6893-44e1-9784-fd69ae689e4d)
+![image](https://github.com/user-attachments/assets/567fdda1-1421-4ed9-b202-425287c42372)
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Mengatur kategori produk untuk memudahkan pencarian dan pengelompokan. Komponen: Formulir Kategori: Input untuk nama kategori dan deskripsi. Daftar Kategori: Tabel untuk menampilkan kategori yang ada.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Mengelola akun pengguna dan hak akses. Komponen: Daftar Pengguna: Tabel untuk menampilkan informasi pengguna. Detail Pengguna: Formulir untuk melihat dan mengedit informasi pengguna.
 
-## Laravel Sponsors
+Melihat dan mengelola pesanan yang masuk. Komponen: Daftar Pesanan: Tabel untuk menampilkan status pesanan, informasi pelanggan, dan total harga. Detail Pesanan: Formulir untuk melihat rincian pesanan dan status pengiriman.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+![image](https://github.com/user-attachments/assets/f8eba5bc-7aba-47fe-acbf-e9113b9df361)
 
-### Premium Partners
+![image](https://github.com/user-attachments/assets/4bbe1ac5-3236-469a-9212-6c8e909b68da)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
+Versi yang digunakan dalam proyek ini adalah Laravel (sebutkan versi spesifik jika ada). Fungsi: Framework PHP utama yang digunakan untuk pengembangan aplikasi web.
+3.2. Livewire Fungsi: Komponen interaktif dalam Laravel yang memungkinkan pembuatan UI yang dinamis tanpa menulis JavaScript secara langsung. Instalasi: composer require livewire/livewire
 
-### Community Sponsors
+Sistem pembayaran online yang terintegrasi untuk memproses transaksi. Paket: midtrans/midtrans-php Konfigurasi: MIDTRANS_CLIENTKEY dan MIDTRANS_SERVERKEY untuk autentikasi. MIDTRANS_IS_PRODUCTION, MIDTRANS_IS_SANITIZED, dan MIDTRANS_IS_3DS untuk pengaturan mode dan keamanan transaksi.
 
-<a href="https://op.gg"><img src="http://opgg-static.akamaized.net/icon/t.rectangle.png" width="150"></a>
+Paket Lainnya Fruitcake/laravel-cors: Dihapus karena sudah usang. Swiftmailer/swiftmailer: Dihapus karena sudah usang, diganti dengan symfony/mailer. Fzaninotto/faker: Dihapus karena sudah usang. PHPUnit/php-token-stream: Dihapus karena sudah usang.
 
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [云软科技](http://www.yunruan.ltd/)
+Dependencies dan Configuration Composer: 
+Digunakan untuk mengelola dependensi PHP. Artisan: Tool command-line Laravel untuk berbagai tugas pengelolaan aplikasi. .env: File konfigurasi lingkungan untuk mengatur variabel seperti database dan kunci API.
 
-## Contributing
+MySQL dengan konfigurasi di .env. Cache dan Session: 
+Disimpan dalam file untuk pengaturan lokal. Mail: Konfigurasi SMTP untuk pengiriman email menggunakan Mailtrap (untuk pengembangan).
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Pengembangan dan Deployment Git: Versi kontrol untuk mengelola kode sumber. GitHub: Platform untuk hosting repository dan kolaborasi tim.
 
-## Code of Conduct
+Penutup Website ini dirancang untuk memberikan pengalaman pengguna yang optimal dengan fitur-fitur yang mendukung administrasi toko, manajemen produk, dan pemrosesan pembayaran. Pastikan untuk memperbarui kunci API dan konfigurasi sesuai kebutuhan saat memindahkan aplikasi ke lingkungan produksi.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-# Midtrans-with-PHP-Laravel
->>>>>>> 25c54a9ed30d47a76ee0d46e0ef1221bc9fd1f17
